@@ -1,13 +1,25 @@
 @import './base.css';
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 #app {
   max-width: 1280px;
-  margin: 0 auto;
+  margin-right: 10px;
   padding: 2rem;
-
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#weather{}
+.container{
+  margin-right: 10px;
+}
+
 a,
 .green {
   text-decoration: none;
@@ -23,14 +35,12 @@ a,
 
 @media (min-width: 1024px) {
   body {
-    display: flex;
     place-items: center;
   }
 
   #app {
-    display: flex;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 0 2rem;
   }
-  #weather{}
 }
